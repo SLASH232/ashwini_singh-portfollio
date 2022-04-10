@@ -1,0 +1,86 @@
+.app__workCard-item {
+    
+    display: flex;
+    width: 85%;
+    min-height: 320px;
+    flex-direction: row;
+    background-color: var(--black-background);
+    // display: flex;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(25, 24, 24, 0.6);
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+
+    .workCard-video {
+        width: 100%;
+        height: 100%;
+        flex: 1;
+        min-width: 300px;
+        min-height: 290px;
+        
+    }
+
+    @media screen and (min-width:1500px) {
+        min-height: 450px;
+
+    }
+
+    @media screen and (max-width:1000px) {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    @media screen and (max-width:600px) {
+        .workCard-video {
+            width: 100%;
+        }
+    }
+}
+
+.info-title h1 {
+    color: var(--white-color);
+}
+
+.workCard-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+
+    align-items: flex-start;
+    justify-content: flex-start;
+
+
+
+    .info-content {
+        color: var(--lightGray-color);
+
+        span {
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+
+    .info-desc {
+        margin-top: 10px;
+    }
+
+    .p__text2 {
+        font-family: var(--font-alt);
+        font-size: 0.8rem;
+        text-align: left;
+        color: var(--ligthGray-color);
+        line-height: 1.5;
+        font-weight: 200;
+
+        letter-spacing: 0.04em;
+
+        @media screen and (min-width: 2000px) {
+            font-size: 1.75rem;
+        }
+    }
+
+}
