@@ -4,7 +4,7 @@
     height: 100%;
     flex-direction: row;
     padding: 6rem 2rem 0;
-    
+
     @media screen and (min-width:2000px) {
         padding-top: 8rem;
     }
@@ -53,23 +53,25 @@
     align-items: center;
     justify-content: center;
     margin: 14px 0 24px 0;
-    .details-roles{
+
+    .details-roles {
         height: 100px;
         text-align: center;
     }
+
     .detail__tag-line {
         color: var(--black-color);
         font-size: 20px;
         text-align: center;
 
     }
-      
-  
+
+
     @media screen and (max-width:450px) {
-        margin:0;
+        margin: 0;
         width: 300px;
         height: 300px;
-     }
+    }
 }
 
 .detail__buttons {
@@ -90,10 +92,14 @@
             color: aliceblue;
             border: 2px solid #ff5823;
         }
+
+        @media screen and (max-width:450px) {
+            margin-left: 0;
+        }
     }
 
     .highlighted-btn {
-        
+
         margin: 14px 0 24px 28px;
         color: var(--white-color);
         background-color: #ff5823;
@@ -102,6 +108,9 @@
             color: #ff5823;
             border: 2px solid;
             background-color: aliceblue
+        }
+        @media screen and (max-width:450px) {
+            margin-left: 0;
         }
     }
 
@@ -119,6 +128,7 @@
     width: 380px;
     margin: 0 0px 0 100px;
     background: var(--darkblue-color);
+
     .profile-pictureBackground {
         height: 92%;
         width: 92%;
@@ -130,14 +140,14 @@
     }
 
     @media screen and (max-width:1200px) {
-        margin:0;
+        margin: 0;
         padding-bottom: 20px;
-     }
-  
-    @media screen and (max-width:450px) {
-       width: 300px;
-       height: 300px;
     }
 
-  
+    @media screen and (max-width:450px) {
+        width: 300px;
+        height: 300px;
+    }
+
+
 }

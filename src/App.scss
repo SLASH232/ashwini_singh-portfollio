@@ -1,5 +1,5 @@
 .app {
-  background-color: var( --gray-background);
+  background-color: var(--gray-background);
   font-family: var(--font-base);
 }
 
@@ -8,13 +8,13 @@
 }
 
 .app__primarybg {
-  background-color: var( --gray-background);
+  background-color: var(--gray-background);
 }
 
 .app__container {
   width: 100%;
   min-height: 100vh;
-
+  position: relative;
   display: flex;
   flex-direction: row;
 }
@@ -39,15 +39,29 @@
 .copyright {
   width: 100%;
   padding: 2rem 0 0;
-
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
 
-  p {
+  // p {
+  //   text-transform: uppercase;
+  //   color: var(--black-color);
+  // }
+
+  h1 {
+    font-family: var(--font-base2);
     text-transform: uppercase;
-    color: var(--black-color);
+    color: var(--gray-color);
+    font-weight: 800;
+
+    font-size: 2.75rem;
+  }
+  @media screen and (max-width:450px) {
+    display: none;
   }
 }
 
@@ -177,6 +191,7 @@
 }
 
 @media screen and (max-width: 500px) {
+
   .app__navigation,
   .app__social {
     display: none;
@@ -192,17 +207,17 @@
 .custom__button {
   background-color: var(--orange-color);
   width: 200px;
-    color: var(--white-color);
-    font-family: var(--font-base);
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    line-height: 28px;
-    font-size: 16px;
-    padding: 0.5rem 1.5rem;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    cursor: pointer;
+  color: var(--white-color);
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 16px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .p__cormorant {
@@ -211,7 +226,7 @@
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: capitalize;
-  font-feature-settings: 'tnum' on, 'lnum' on;
+  font-feature-settings: 'tnum'on, 'lnum'on;
   line-height: 29.9px;
   font-size: 23px;
 }
@@ -225,6 +240,7 @@
   line-height: 28px;
   font-size: 16px;
 }
+
 .headtext__cormorant {
   font-family: var(--font-base);
   color: var(--black-color);
@@ -235,6 +251,7 @@
 }
 
 @media screen and (min-width: 2000px) {
+
   .custom__button,
   .p__cormorant {
     font-size: 37px;
@@ -266,7 +283,7 @@
   .section__padding {
     padding: 4rem 2rem;
   }
-  
+
   .p__cormorant {
     font-size: 21px;
   }
