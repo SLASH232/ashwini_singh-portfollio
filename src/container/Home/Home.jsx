@@ -27,13 +27,13 @@ function Home() {
                             <Typical
                                 loop={Infinity}
                                 steps={[
-                                    "Ethusiastic Dev 😌",
+                                    "C++/STL fan 😌",
                                     1500,
                                     "Full Stack Developer 💻",
                                     1500,
                                     "MERN Stack Dev 🧬",
                                     1500,
-                                    "React/React Native Dev 📱",
+                                    "ReactJS Dev 📱",
                                     1500,
                                 ]}
 
@@ -42,7 +42,7 @@ function Home() {
 
                     </span>
                     <span className='p__opensans detail__tag-line'>
-                        Knack of building application with frontend and backend operations...
+                        Love to solve problems either in coding or through development...
                     </span>
                 </div>
 
